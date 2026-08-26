@@ -1,0 +1,36 @@
+*
+{
+    margin:0px;
+    padding:0px;
+}
+
+body{
+    min-height:100vh;
+    font-family: "Birthstone Bounce", cursive;
+    font-size: 30px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:#FFD3AC;
+    background-size: cover;
+}
+
+.container
+{
+    position: relative;
+    text-align: center;
+    padding:10px;
+    border-radius: 15px;
+    box-shadow: 0 12px 35px rgba(100, 136, 234, 1);
+    background-color: white;
+}
+
+.timer
+{
+    display:flex;
+    justify-content: center;
+    gap:30px;
+    font-size:75px;
+    font-weight: bold;
+}
