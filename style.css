@@ -6,7 +6,7 @@
 
 body{
     min-height:100vh;
-    font-family: "Birthstone Bounce", cursive;
+    font-family: "Happy Monkey", system-ui;
     font-size: 30px;
     display:flex;
     flex-direction: column;
@@ -18,12 +18,13 @@ body{
 
 .container
 {
-    position: relative;
+    font-size: 30px;
     text-align: center;
     padding:10px;
     border-radius: 15px;
-    box-shadow: 0 12px 35px rgba(100, 136, 234, 1);
     background-color: white;
+    width: 100%;
+    max-width:612px;
 }
 
 .timer
@@ -31,6 +32,66 @@ body{
     display:flex;
     justify-content: center;
     gap:30px;
-    font-size:75px;
     font-weight: bold;
+}
+
+
+
+#days::after
+{
+   content: "Days";
+   font-size: 20px;
+   color:grey;
+}
+
+
+#hours::after
+{
+   content: "Hours";
+   font-size: 20px;
+   color:grey;
+}
+
+
+#minutes::after
+{
+   content: "Minutes";
+   font-size: 20px;
+   color:grey;
+}
+
+
+#seconds::after
+{
+   content: "Seconds";
+   font-size: 20px;
+   color:grey;
+}
+
+/*=========================================
+    Tablet
+===========================================*/
+
+@media (max-width : 850px)
+{
+    .container
+    {
+      width:100%;
+      max-width:612px;
+      max-height: unset;
+
+    }
+}
+
+/*==========================================
+  Mobile
+===========================================*/
+
+@media ( max-width : 600px )
+{
+      .container{
+        width:100%;
+      max-width:500px;
+      max-height: unset;
+      }
 }
