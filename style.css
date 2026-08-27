@@ -27,6 +27,21 @@ body{
     max-width:612px;
 }
 
+.pic {
+    width: 100%;
+}
+
+.pic img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+
+    display: block;
+    margin: 0 auto;
+
+    border-radius: 12px;
+}
+
 .timer
 {
     display:flex;
@@ -68,30 +83,90 @@ body{
    color:grey;
 }
 
-/*=========================================
-    Tablet
-===========================================*/
+/*==========================
+   Tablet
+============================*/
+@media (max-width: 850px) {
 
-@media (max-width : 850px)
-{
-    .container
-    {
-      width:100%;
-      max-width:612px;
-      max-height: unset;
+    .container {
+        max-width: 600px;
+        padding: 20px;
+    }
 
+    h1 {
+        font-size: 35px;
+    }
+
+    .timer {
+        gap: 20px;
+        font-size: 28px;
     }
 }
 
-/*==========================================
-  Mobile
-===========================================*/
 
-@media ( max-width : 600px )
-{
-      .container{
-        width:100%;
-      max-width:500px;
-      max-height: unset;
-      }
+/* ================================
+   Mobile
+================================ */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 15px;
+        border-radius: 12px;
+    }
+
+    h1 {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    .timer {
+        gap: 12px;
+        font-size: 22px;
+        margin-top: 20px;
+    }
+
+    #days::after,
+    #hours::after,
+    #minutes::after,
+    #seconds::after {
+        font-size: 13px;
+    }
+}
+
+
+/* ================================
+   Small Mobile
+================================ */
+
+@media (max-width: 400px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 12px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .timer {
+        gap: 8px;
+        font-size: 18px;
+    }
+
+    #days::after,
+    #hours::after,
+    #minutes::after,
+    #seconds::after {
+        font-size: 11px;
+    }
 }
